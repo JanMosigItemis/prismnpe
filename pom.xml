@@ -137,6 +137,13 @@
             <version>jdk-11+26</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.11.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -252,7 +259,7 @@
             </activation>
             <properties>
                 <jvm.options>-Djava.awt.headless=true
-                    -Dprism.order=sw</jvm.options>
+                    -Dprism.order=sw -Dprism.verbose=true</jvm.options>
             </properties>
         </profile>
         <profile>
